@@ -1,0 +1,12 @@
+body {text-align: center;
+background-color: blanchedalmond;
+font-family: cursive;
+font-size: 1.5rem;
+}
+button{
+    font-family: cursive;
+    background-color: brown;
+    color: white;
+    border-radius: 3px;
+    padding:5px;
+}
