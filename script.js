@@ -1,13 +1,9 @@
-function kiir()
-{
-fetch("https://catfact.ninja/fact", {
-  "headers": {
-    "accept": "application/json"
-  },
-  "referrer": "https://catfact.ninja/",
-  "method": "GET",
-}).then(adat => adat.json())
-.then(res => {
-    document.getElementById("teny").innerHTML = res["fact"];
-})
+function kiir(){
+    fetch("https://catfact.ninja/facts")
+    .then(adat => adat.json())
+    .then(res => {
+        for(const item of res["data"]){
+            document.getElementById("teny").innerHTML +=  `<li>${item["fact"]} </li>`
+        }
+    })
 }
